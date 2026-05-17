@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <title>Netflix</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+
+
+ <header class="js-header-menu header-menu">
+
+ <div class="header-menu-left">
+  <img src="images/netflix_text.png">
+ </div>
+
+ <div class="header-menu-middle">
+  <p>Home</p>
+  <p>Shows</p>
+  <p>Movies</p>
+  <p>Games</p>
+  <p>New & Popular</p>
+  <p>My List</p>
+  <p>Browse by languages</p>
+ </div>
+
+ <div x-data="{ open: false }" class="header-menu-right">
+
+
+  <svg viewBox="0 0 24 24" width="24" height="24" data-icon="MagnifyingGlassMedium" data-icon-id=":r0:" aria-hidden="true" class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0m-1.38 7.03a9 9 0 1 1 1.41-1.41l5.68 5.67-1.42 1.42z" clip-rule="evenodd"></path></svg>
+
+
+  <svg viewBox="0 0 24 24" width="24" height="24" data-icon="BellMedium" data-icon-id=":r1:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M13 4.07A7 7 0 0 1 19 11v4.25q1.58.12 3.1.28l-.2 2a93 93 0 0 0-19.8 0l-.2-2q1.52-.15 3.1-.28V11a7 7 0 0 1 6-6.93V2h2zm4 11.06V11a5 5 0 0 0-10 0v4.13a97 97 0 0 1 10 0m-8.37 4.24C8.66 20.52 10.15 22 12 22s3.34-1.48 3.37-2.63c.01-.22-.2-.37-.42-.37h-5.9c-.23 0-.43.15-.42.37" clip-rule="evenodd"></path></svg>
+
+
+  <div @click="open = true" class="js-pfp-nav pfp-nav">
+   <img src="images/pfp.png">
+
+   <p class="arrow">&#9660;</p>
+
+   <div  x-show="open" @click.outside="open = false" class="js-menu-list menu-list"></div>
+  </div>
+  
+ </div>
+
+ </header>
+
+
+  <div class="topPic-div">
+    <img  src="images/topPic.jpg">
+
+    <div class="logo-top">
+      <img  src="https://occ-0-4095-325.1.nflxso.net/dnm/api/v6/MQ4MI4yJWUNHiJvTFAbA9q3pxcg/AAAABYyOkL05ULHx4eDmHbPW-Y4mCDnHaXdBNRXsPUljmMGYwS2JEMgjKcJk80CtE2S8w5p-9MeY6JKHTa-_IGxDZm3P7uewU6s_cW1XZp8VY5MB.png?r=473">
+
+      <p>In the wake of a zombie apocalypse, survivors hold on to the hope of humanity by banding together to wage a fight for their own survival.</p>
+
+      <div class="buttons-top">
+        <button class="play">
+          <svg viewBox="0 0 24 24" width="24" height="24" data-icon="PlayMedium" data-icon-id=":r0:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" d="M5 2.7a1 1 0 0 1 1.48-.88l16.93 9.3a1 1 0 0 1 0 1.76l-16.93 9.3A1 1 0 0 1 5 21.31z"></path></svg>
+          
+          Play</button>
+        <button class="moreInfo">
+          <svg viewBox="0 0 24 24" width="24" height="24" data-icon="CircleIMedium" data-icon-id=":r1:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="white" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12m13-2v8h-2v-8zm-1-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" clip-rule="evenodd"></path></svg>
+          
+          
+          More Info</button>
+      </div>
+    </div>
+    
+    <div class="js-carousel carousel">
+
+      
+
+  </div>
+    
+  </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="data/content.js"></script>
+ <script src="script/carousel.js"></script>
+ <script src="data/user.js"></script>
+ <script src="script/menu.js"></script>
+ <script src="script/header.js"></script>
+
+
+ <script>
+  
+ </script>
+  
+ 
+</body>
+</html>

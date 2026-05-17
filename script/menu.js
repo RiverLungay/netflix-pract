@@ -1,41 +1,21 @@
-const pfpElem = document.querySelector(".js-pfp-div");
+const navElem = document.querySelector(".js-pfp-nav");
+const navArrowElem = document.querySelector(".js-pfp-nav .arrow");
 
-const profileObject = [
-  {
-    name: "user",
-    image: "images/pfp.png",
-  },
+const menuListElem = document.querySelector(".js-menu-list");
 
-  {
-    name: "user1",
-    image: "images/pfp1.png",
-  },
+// navElem.addEventListener("mouseenter", () => {
+//   navArrowElem.innerHTML = `&#9650;`;
+// });
 
-  {
-    name: "user2",
-    image: "images/pfp2.png",
-  },
+// navElem.addEventListener("mouseleave", () => {
+//   navArrowElem.innerHTML = `&#9660;`;
+// });
 
-  {
-    name: "user3",
-    image: "images/pfp3.png",
-  },
-
-  {
-    name: "user4",
-    image: "images/pfp4.png",
-  },
-];
-
-profileObject.forEach((values) => {
-  pfpElem.innerHTML += `
-   
-   <div class="user-wrap" style="">
-    <div class="pic">
-    <img src=${values.image}>
-    </div>
-    <p>${values.name}</p> 
-
-    </div>
-   `;
+profileObject.forEach((profile) => {
+  menuListElem.innerHTML += `
+ <div class="menu-pfp" >
+  <img src=${profile.image}>
+  <p>${profile.name}</p>
+ </div>
+ `;
 });
