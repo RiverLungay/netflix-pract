@@ -4,6 +4,8 @@
   <title>
 
   </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
   <style>
    body{
     background-color: rgb(20,20,20);
@@ -22,35 +24,10 @@
     display: flex;
     gap: 5px;
     width: 100%;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-   }
-
-   .box-div::-webkit-scrollbar{
-    display: none;
-   }
-   .box-div::scroll-button(right){
-    content: ">";
-    border: none;
-    background-color: blueviolet;
-    height: 100%;
-    color: white;
-    padding: 20px;
-    margin-left:-20px;
-    border-radius: 50%;
+   
    }
 
 
-   .box-div::scroll-button(left){
-    content: "<";
-    border: none;
-    background-color: blueviolet;
-    height: 100%;
-    color: white;
-    padding: 20px;
-    margin-left:-20px;
-    border-radius: 50%;
-   }
    .box{
     background-color: aqua;
     width: 250px;
@@ -69,18 +46,25 @@
 
 
 
-  <div class="wrap">
-   <div class="box-div">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+  <div class="wrap swiper">
+   <div class="box-div swiper-wrapper">
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
+    <div class="box swiper-slide"></div>
    </div>
+
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+
   </div>
 
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+ <script src="carousel.js"></script>
  </body>
 </html>

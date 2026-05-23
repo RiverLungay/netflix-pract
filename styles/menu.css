@@ -74,7 +74,6 @@
 
 .carousel{
   width: 100%;
-  overflow-x: auto;
   z-index: 1000;
   margin-top: -200px;
   display: flex;
@@ -83,23 +82,21 @@
   
 }
 
-.carousel::-webkit-scrollbar{
-  display:none0;
-}
-
-.carousel::scroll-button(right){
-  content: 'Right';
-  border: none;
-  background-color: var(--brand-color);
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  
-}
 
 .carousel img{
   width: 300px;
   border-radius: 4px;
   flex:0 0 20em
   
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  opacity: 1;
 }
